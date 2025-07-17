@@ -9,6 +9,20 @@
     --section-bg: #171b24;
 }
 
+@media (prefers-color-scheme: light) {
+    :root {
+        --tech-blue: #0066cc;
+        --dark-bg: #ffffff;
+        --accent-green: #009e72;
+        --soft-black: #f4f4f4;
+        --section-bg: #f5f7fa;
+    }
+    body {
+        color: #222;
+        background: linear-gradient(135deg, var(--soft-black), #dde7f2 70%);
+    }
+}
+
 html {
     scroll-behavior: smooth;
     background: var(--soft-black);
@@ -384,4 +398,16 @@ footer {
     .section h2 { font-size: 1.1rem; }
     .section { padding: 0.2rem 0.4rem;}
     .hero { padding-top: 68px;}
+}
+
+@media (max-width: 360px) {
+    body { font-size: 0.95rem; }
+    .skills-grid span { font-size: 0.9rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .animated, * {
+        animation: none !important;
+        transition: none !important;
+    }
 }
