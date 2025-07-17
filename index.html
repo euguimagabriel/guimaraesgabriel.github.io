@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <nav class="main-nav animated fadeInDown">
+    <nav class="main-nav glass animate__animated animate__fadeInDown">
         <span class="logo">G<span class="logo-highlight">.</span></span>
         <ul>
             <li><a class="nav-link active" href="#about"><i class="fa-solid fa-user-shield"></i> About</a></li>
@@ -20,9 +20,10 @@
         </ul>
     </nav>
 
-    <header class="hero animated fadeIn">
-        <div class="hero-content">
-            <img src="https://api.dicebear.com/7.x/bottts/svg?seed=Gabriel&backgroundColor=0d0d0d,141414,00d2ff" alt="Gabriel Avatar" class="avatar animated bounceIn">
+    <header class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-content glass animate__animated animate__fadeIn">
+            <img src="https://api.dicebear.com/7.x/bottts/svg?seed=Gabriel&backgroundColor=0d0d0d,141414,00d2ff" alt="Gabriel Avatar" class="avatar pulse">
             <h1 class="gradient-text">Gabriel Guimarães</h1>
             <h2>Cybersecurity & Network Engineer</h2>
             <p class="subtitle">Passionate about information security and technology.<br>
@@ -31,6 +32,7 @@
             <div class="social-links">
                 <a href="mailto:gabrielguimaraes.ti@gmail.com" title="Email"><i class="fa fa-envelope"></i></a>
                 <a href="https://www.linkedin.com/in/gabriel-guimarães-b95329123" target="_blank" title="LinkedIn"><i class="fa fa-linkedin"></i></a>
+                <a href="resume.pdf" class="btn-glass" download><i class="fa fa-download"></i> Download CV</a>
             </div>
         </div>
         <div class="hero-underline"></div>
@@ -38,51 +40,55 @@
 
     <main>
         <!-- About -->
-        <section id="about" class="section about animated fadeInUp">
+        <section id="about" class="section about glass animate__animated animate__fadeInUp">
             <h2><i class="fa-solid fa-user-shield section-icon"></i> About Me</h2>
             <div class="about-content">
                 <p>
                     An information security enthusiast who started to fall in love with this area at the age of 14, now studies information systems and intends to specialize in the area of security and computer forensics.
-At that time I was already very involved with the offensive security area, performing several invasion tests on web applications on my own, over time the passion for the area was only growing and now no longer seek work in another area beyond information security.
+					At that time I was already very involved with the offensive security area, performing several invasion tests on web applications on my own, over time the passion for the area was only growing and now 
+					no longer seek work in another area beyond information security.
                 </p>
             </div>
         </section>
 
         <!-- Skills -->
-        <section id="skills" class="section skills animated fadeInUp">
+        <section id="skills" class="section skills glass animate__animated animate__fadeInUp">
             <h2><i class="fa-solid fa-gears section-icon"></i> Skills & Tools</h2>
-            <div class="skills-grid">
-                <span><i class="fa-solid fa-fire"></i> Firewall</span>
-                <span><i class="fa-solid fa-virus"></i> CrowdStrike</span>
-                <span><i class="fa-solid fa-chart-area"></i> SIEM</span>
-                <span><i class="fa-brands fa-cisco"></i> Cisco</span>
-				<span><i class="fa-brands fa-cisco"></i>Juniper</span>
-				<span><i class="fa-brands fa-cisco"></i>Arista</span>
-                <span><i class="fa-solid fa-cloud"></i> Zscaler</span>
-                <span><i class="fa-solid fa-shield-halved"></i> CheckPoint</span>
-                <span><i class="fa-solid fa-shield"></i> Fortigate</span>
-                <span><i class="fa-brands fa-linux"></i> Linux</span>
-                <span><i class="fa-solid fa-terminal"></i> ShellScript</span>
-                <span><i class="fa-brands fa-python"></i> Python</span>
-                <span><i class="fa-solid fa-globe"></i> Web Application Firewall</span>
-                <span><i class="fa-solid fa-network-wired"></i> Network Design</span>
-                <span><i class="fa-solid fa-file-shield"></i> Security Policies</span>
-                <span><i class="fa-solid fa-cloud-shield"></i> Cloud Security</span>
-            </div>
-            <div class="certs">
-                <h3><i class="fa-solid fa-certificate"></i> Certifications</h3>
-                <ul>
-                    <li>CCNA Routing and Switching</li>
-                    <li>EXIN Information Security Foundation (ISO/IEC 27002)</li>
-                    <li>ITIL® Foundation</li>
-                </ul>
+            <div class="skills-flex">
+                <div class="skills-grid">
+                    <span class="skill-badge"><i class="fa-solid fa-fire"></i> Firewall</span>
+                    <span class="skill-badge"><i class="fa-solid fa-virus"></i> CrowdStrike</span>
+                    <span class="skill-badge"><i class="fa-solid fa-chart-area"></i> SIEM</span>
+                    <span class="skill-badge"><i class="fa-brands fa-cisco"></i> Cisco</span>
+                    <span class="skill-badge"><i class="fa-solid fa-network-wired"></i> Juniper</span>
+                    <span class="skill-badge"><i class="fa-solid fa-network-wired"></i> Arista</span>
+                    <span class="skill-badge"><i class="fa-solid fa-cloud"></i> Zscaler</span>
+                    <span class="skill-badge"><i class="fa-solid fa-shield-halved"></i> CheckPoint</span>
+                    <span class="skill-badge"><i class="fa-solid fa-shield"></i> Fortigate</span>
+                    <span class="skill-badge"><i class="fa-brands fa-linux"></i> Linux</span>
+                    <span class="skill-badge"><i class="fa-solid fa-terminal"></i> ShellScript</span>
+                    <span class="skill-badge"><i class="fa-brands fa-python"></i> Python</span>
+                    <span class="skill-badge"><i class="fa-solid fa-globe"></i> Web Application Firewall</span>
+                    <span class="skill-badge"><i class="fa-solid fa-network-wired"></i> Network Design</span>
+                    <span class="skill-badge"><i class="fa-solid fa-file-shield"></i> Security Policies</span>
+                    <span class="skill-badge"><i class="fa-solid fa-cloud-shield"></i> Cloud Security</span>
+                </div>
+                <div class="certs glass">
+                    <h3><i class="fa-solid fa-certificate"></i> Certifications</h3>
+                    <ul>
+                        <li>CCNA Routing and Switching</li>
+                        <li>EXIN Information Security Foundation (ISO/IEC 27002)</li>
+                        <li>ITIL® Foundation</li>
+                    </ul>
+                </div>
             </div>
         </section>
 
         <!-- Career -->
-        <section id="career" class="section career animated fadeInUp">
+        <section id="career" class="section career glass animate__animated animate__fadeInUp">
             <h2><i class="fa-solid fa-briefcase section-icon"></i> Professional Experience</h2>
             <div class="timeline">
+                <!-- Each job block -->
                 <div class="timeline-dot"></div>
                 <div class="job-card">
                     <h3>CyberSecurity Engineer</h3>
@@ -99,7 +105,7 @@ At that time I was already very involved with the offensive security area, perfo
                 <div class="job-card">
                     <h3>Network & Security Engineer</h3>
                     <div class="job-meta">Euronext <span> Aug/2022 - Jun/2023</span></div>
-					 <ul>
+                    <ul>
                         <li>Lead the maintenance of network solutions to enable effective management of business and technical requirements for all corporate and Data Centre networks</li>
                         <li>Manage third party suppliers for operational effectiveness and to influence design decisions to ensure maximum business benefit is obtained from the network infrastructure</li>
                         <li>Own the operational vendor relationships In charge of the provisioning and maintenance to all areas to ensure appropriate Network solutions and controls in the infrastructure environment</li>
@@ -132,52 +138,50 @@ At that time I was already very involved with the offensive security area, perfo
                         <li>Weekly and monthly reports</li>
                     </ul>
                 </div>
-			<div class="timeline-dot"></div>
+                <div class="timeline-dot"></div>
                 <div class="job-card">
                     <h3>Intern - Linx</h3>
-                    <div class="job-meta">Equinix <span> May/2017 - Feb/2018</span></div>
-                    <ul>
-                        <li>Member of the change management team, responsible for analyzing and 
+                    <div class="job-meta">Linx <span> May/2017 - Feb/2018</span></div>
+                    <li>Member of the change management team, responsible for analyzing and 
 						defining work methods and processes, studying times and parameters, mapping activities 
 						flow and identifying failures, in order to establish strategies for problem solving and to propose 
-						continuous process improvement.</li>
-                    </ul>
+						continuous process improvement.
+					</li>
                 </div>
             </div>
         </section>
 
         <!-- Education -->
-		<section id="education" class="section education animated fadeInUp">
-			<h2><i class="fa-solid fa-graduation-cap section-icon"></i> Education</h2>
-			<div class="edu-card">
-				<h3>Instituto Infnet</h3>
-				<div class="edu-meta">MBA in Information Security Management, 202 (Not Completed)</div>
-				<ul>
-					<li>It trains managers prepared to deal with advanced data security issues and Data Privacy 
+        <section id="education" class="section education glass animate__animated animate__fadeInUp">
+            <h2><i class="fa-solid fa-graduation-cap section-icon"></i> Education</h2>
+            <div class="edu-card">
+                <h3>Instituto Infnet <span class="edu-status inprogress">MBA</span></h3>
+                <div class="edu-meta">MBA in Information Security Management, 2022 (Not Completed)</div>
+                <ul>
+                    <li>It trains managers prepared to deal with advanced data security issues and Data Privacy 
 					Officers, in charge of data processing in accordance with the LGPD. It covers the main certifications 
 					of the segment, like CISSP, CISM, CRISC and ITIL, preparing the student for the Exin Privacy and Data 
 					Protection exam, based on Brazilian law.</li>
-				</ul>
-			</div>
-			<div class="edu-card">
-				<h3>Instituto Infnet</h3>
-				<div class="edu-meta">Bachelor in Information Systems (Business & Management), Graduated 2020</div>
-				<ul>
-					<li>Form Business Analysts with a comprehensive view of a company's processes, as well as a strong 
+                </ul>
+            </div>
+            <div class="edu-card">
+                <h3>Instituto Infnet <span class="edu-status complete">Bachelor</span></h3>
+                <div class="edu-meta">Bachelor in Information Systems (Business & Management), Graduated 2020</div>
+                <li>Form Business Analysts with a comprehensive view of a company's processes, as well as a strong 
 					background in key systems such as SAP R/3. During the course, the student learns business analysis 
 					techniques using the BPM CBOK and ITIL Foundations frameworks. In addition, it dominates Business 
 					Intelligence solutions to enable the company to make the best decisions.</li>
 				</ul>
-			</div>
-		</section>
+            </div>
+        </section>
 
         <!-- Contact -->
-        <section id="contact" class="section contact animated fadeInUp">
+        <section id="contact" class="section contact glass animate__animated animate__fadeInUp">
             <h2><i class="fa-solid fa-envelope section-icon"></i> Contact</h2>
             <ul>
                 <li><i class="fa fa-envelope"></i> gabrielguimaraes.ti@gmail.com</li>
-                <li><i class="fa fa-phone"></i>...</li>
-                <li><i class="fa fa-linkedin"></i> <a href="https://www.linkedin.com/in/gabriel-guimarães-b95329123" target="_blank">LinkedIn</a></li>
+                <li><i class="fa fa-phone"></i> +[your phone here]</li>
+                <li><i class="fa fa-linkedin"></i> <a href="https://www.linkedin.com/in/guimagabriel/" target="_blank">LinkedIn</a></li>
             </ul>
         </section>
     </main>
@@ -185,26 +189,27 @@ At that time I was already very involved with the offensive security area, perfo
     <footer>
         <p>© 2024 Gabriel Guimarães • Powered by CyberSecurity</p>
     </footer>
+
     <script>
-      // Typewriter animation
-      const words = ["Networks", "Firewalls", "Cybersecurity", "SIEM", "Forensics"];
-      let i = 0, txt = '', wordIndex = 0;
-      function typeWriter() {
+    // Typewriter animation
+    const words = ["Networks", "Firewalls", "Cybersecurity", "Zero Trust"];
+    let i = 0, txt = '', wordIndex = 0;
+    function typeWriter() {
         if (wordIndex >= words.length) wordIndex = 0;
         if (i < words[wordIndex].length) {
-          txt += words[wordIndex].charAt(i);
-          document.getElementById("typed-words").innerHTML = txt + '|';
-          i++;
-          setTimeout(typeWriter, 110);
+            txt += words[wordIndex].charAt(i);
+            document.getElementById("typed-words").innerHTML = txt + '|';
+            i++;
+            setTimeout(typeWriter, 110);
         } else {
-          setTimeout(() => {
-            i = 0; txt = '';
-            wordIndex++;
-            typeWriter();
-          }, 1200);
+            setTimeout(() => {
+                i = 0; txt = '';
+                wordIndex++;
+                typeWriter();
+            }, 1200);
         }
-      }
-      window.onload = typeWriter;
+    }
+    window.onload = typeWriter;
     </script>
 </body>
 </html>
