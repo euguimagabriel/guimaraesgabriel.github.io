@@ -12,11 +12,11 @@
     <nav class="main-nav animated fadeInDown">
         <span class="logo">G<span class="logo-highlight">.</span></span>
         <ul>
-            <li><a class="nav-link active" href="#about" title="About" aria-label="About"><i class="fa-solid fa-user-shield" aria-hidden="true"></i> About</a></li>
-            <li><a class="nav-link" href="#skills" title="Skills &amp; Tools" aria-label="Skills &amp; Tools"><i class="fa-solid fa-gears" aria-hidden="true"></i> Skills &amp; Tools</a></li>
-            <li><a class="nav-link" href="#career" title="Experience" aria-label="Experience"><i class="fa-solid fa-briefcase" aria-hidden="true"></i> Experience</a></li>
-            <li><a class="nav-link" href="#education" title="Education" aria-label="Education"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i> Education</a></li>
-            <li><a class="nav-link" href="#contact" title="Contact" aria-label="Contact"><i class="fa-solid fa-envelope" aria-hidden="true"></i> Contact</a></li>
+            <li><a class="nav-link active" href="#about"><i class="fa-solid fa-user-shield"></i> About</a></li>
+            <li><a class="nav-link" href="#skills"><i class="fa-solid fa-gears"></i> Skills & Tools</a></li>
+            <li><a class="nav-link" href="#career"><i class="fa-solid fa-briefcase"></i> Experience</a></li>
+            <li><a class="nav-link" href="#education"><i class="fa-solid fa-graduation-cap"></i> Education</a></li>
+            <li><a class="nav-link" href="#contact"><i class="fa-solid fa-envelope"></i> Contact</a></li>
         </ul>
     </nav>
 
@@ -26,11 +26,11 @@
             <h1 class="gradient-text">Gabriel Guimarães</h1>
             <h2>Cybersecurity & Network Engineer</h2>
             <p class="subtitle">Passionate about information security and technology.<br>
-                <span class="typed" id="typed-words" aria-live="polite" aria-atomic="true"></span>
+                <span class="typed" id="typed-words"></span>
             </p>
             <div class="social-links">
-                <a href="mailto:gabrielguimaraes.ti@gmail.com" title="Email" aria-label="Email"><i class="fa fa-envelope" aria-hidden="true"></i></a>
-                <a href="https://www.linkedin.com/in/gabriel-guimar%C3%A3es-b95329123" target="_blank" title="LinkedIn" aria-label="LinkedIn"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                <a href="mailto:gabrielguimaraes.ti@gmail.com" title="Email"><i class="fa fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/gabriel-guimarães-b95329123" target="_blank" title="LinkedIn"><i class="fa fa-linkedin"></i></a>
             </div>
         </div>
         <div class="hero-underline"></div>
@@ -56,8 +56,8 @@ At that time I was already very involved with the offensive security area, perfo
                 <span><i class="fa-solid fa-virus"></i> CrowdStrike</span>
                 <span><i class="fa-solid fa-chart-area"></i> SIEM</span>
                 <span><i class="fa-brands fa-cisco"></i> Cisco</span>
-		<span><i class="fa-brands fa-cisco"></i>Juniper</span>
-		<span><i class="fa-brands fa-cisco"></i>Arista</span>
+				<span><i class="fa-brands fa-cisco"></i>Juniper</span>
+				<span><i class="fa-brands fa-cisco"></i>Arista</span>
                 <span><i class="fa-solid fa-cloud"></i> Zscaler</span>
                 <span><i class="fa-solid fa-shield-halved"></i> CheckPoint</span>
                 <span><i class="fa-solid fa-shield"></i> Fortigate</span>
@@ -189,7 +189,6 @@ At that time I was already very involved with the offensive security area, perfo
       // Typewriter animation
       const words = ["Networks", "Firewalls", "Cybersecurity", "SIEM", "Forensics"];
       let i = 0, txt = '', wordIndex = 0;
-      const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
       function typeWriter() {
         if (wordIndex >= words.length) wordIndex = 0;
         if (i < words[wordIndex].length) {
@@ -205,11 +204,7 @@ At that time I was already very involved with the offensive security area, perfo
           }, 1200);
         }
       }
-      if (!prefersReducedMotion) {
-        window.onload = typeWriter;
-      } else {
-        document.getElementById("typed-words").textContent = words.join(', ');
-      }
+      window.onload = typeWriter;
     </script>
 </body>
 </html>
